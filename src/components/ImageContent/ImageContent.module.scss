@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+}
+.imgContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgBlock {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: clamp(150px, 27vw, 300px);
+}
+.img {
+  border-radius: 10px;
+  // width: 30%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .imgBlock {
+    display: none;
+  }
+}

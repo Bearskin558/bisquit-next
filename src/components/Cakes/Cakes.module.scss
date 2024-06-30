@@ -1,0 +1,55 @@
+.cakes {
+}
+.filling {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-weight: 300;
+  column-gap: calc((100% - 900px) / 3);
+  row-gap: 40px;
+  &Image {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  &Item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: clamp(150px, 27vw, 300px);
+    align-items: center;
+    text-align: center;
+    img {
+      height: clamp(150px, 27vw, 300px);
+      width: auto;
+    }
+  }
+  &Title {
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &Text {
+    width: 100%;
+  }
+  &Description {
+    font-size: var(--descr-fz);
+  }
+}
+
+@media (max-width: 768px) {
+  .filling {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // column-gap: 0;
+    &Item {
+      width: 100%;
+      img {
+        width: 75vw;
+        height: 75vw;
+      }
+    }
+  }
+}

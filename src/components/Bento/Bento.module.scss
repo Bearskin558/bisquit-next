@@ -1,0 +1,62 @@
+.bentoTitleBlock {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.cakes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(40px, 5vw, 60px);
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  flex-direction: column;
+
+  &Item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 2vw, 18px);
+    font-weight: 300;
+  }
+  &Price {
+    font-weight: var(--price-fw);
+    font-size: var(--price-fz);
+  }
+}
+@media (max-width: 1024px) {
+  .cakes {
+    justify-content: space-between;
+    &Item {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .construct {
+    padding: 40px 5px 30px;
+  }
+  .constructList {
+    gap: 15px;
+  }
+  .constructItem {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .cakes {
+    flex-direction: column;
+    &Item {
+      font-size: 14px;
+    }
+    &Price {
+      font-size: 20px;
+    }
+  }
+
+  .bentoTitle {
+    font-size: 36px;
+  }
+}

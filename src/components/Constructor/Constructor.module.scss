@@ -1,0 +1,70 @@
+.construct {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid #393535;
+  border-radius: 20px;
+  position: relative;
+  padding: 50px 20px 30px;
+  width: 100%;
+  text-align: center;
+
+  &Title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 100%;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    span {
+      padding: 0 9px 0 15px;
+      background-color: #f4f0ed;
+    }
+  }
+
+  &List {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &Item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    text-wrap: none;
+    width: 33.33%;
+
+    &Title {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+
+  &Properties {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 768px) {
+  .construct {
+    padding: 40px 5px 30px;
+    &List {
+      gap: 15px;
+    }
+    &Item {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.15em;
+    }
+  }
+}

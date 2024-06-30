@@ -1,0 +1,40 @@
+.fillings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: var(--descr-fz);
+  h3 {
+    // margin-top: -20px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+.fillingsList {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.fillingsItem {
+  background-color: #f4f0ed;
+  z-index: 10;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+.orderInfo {
+  font-size: var(--descr-fz);
+  font-weight: 400;
+}
+.description {
+  font-weight: 300;
+  font-size: var(--descr-fz);
+}
+@media (max-width: 1024px) {
+  .fillingsList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fillingsItem {
+    width: clamp(150px, 30%, 250px);
+  }
+}
