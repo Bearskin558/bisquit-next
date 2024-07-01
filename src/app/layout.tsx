@@ -7,7 +7,7 @@ import Link from 'next/link';
 const jost = Jost({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rs8w4x3g-3000.euw.devtunnels.ms/'),
+  metadataBase: new URL('https://bisquit-bakery-shop.ru'),
   title: 'Bisquit | бенто, торты, макарон в Калуге на заказ',
   description:
     'Домашняя кондитерская в Калуге. У меня Вы можете заказать торты, бенто-торты, макарон, трайфлы, капкейки, ириски, печенье.',
