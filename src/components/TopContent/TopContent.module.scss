@@ -4,7 +4,7 @@
   gap: 15px;
   justify-content: space-evenly;
   min-height: calc(100vh - 80px);
-  padding: 20px 0;
+  margin-bottom: 50px;
 }
 .imageWrapper {
   display: flex;
@@ -15,6 +15,7 @@
   div {
     max-width: 29%;
   }
+  margin: 30px auto;
 }
 .blockquote {
   display: flex;
@@ -33,10 +34,11 @@
     display: none;
   }
   .root {
-    padding-top: 10vh;
+    padding: 12vh 0;
     min-height: calc(100vh - 60px);
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: 7vh;
+    margin-bottom: 0px;
   }
 }
