@@ -32,6 +32,8 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         <link rel="shortcut icon" href="img/favicon.ico" />
+        <meta property="og:image:width" content="<120>" />
+        <meta property="og:image:height" content="<68>" />
       </head>
       <body className={jost.className}>{children}</body>
     </html>
