@@ -25,7 +25,7 @@ const Cakes = () => {
           <img
             loading="lazy"
             className={styles.fillingImage}
-            src="img/fillings/vanilla.png"
+            src="img/fillings/vanilla.jpg"
             alt="ваниль-ягоды"
           />
           <div className={styles.fillingText}>

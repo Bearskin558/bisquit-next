@@ -9,7 +9,7 @@ const navItems = {
   cakes: 'торты',
   cupcakes: 'капкейки',
   trifles: 'трайфлы',
-  macaron: 'макарон',
+  macarons: 'макарон',
   toffee: 'ириски',
   cookies: 'печенье',
   contacts: 'контакты',
@@ -48,7 +48,7 @@ const NavMenu = ({ isOpen, setIsOpen }: Props) => {
         ref={menuRef}
       >
         <button className={styles.closeButton}>
-          <Image src="img/close.svg" alt="close" width={35} height={35} />
+          <img src="img/close.svg" alt="close" />
         </button>
         {Object.entries(navItems).map(([id, text]) => {
           return <NavItem text={text} key={text} elementIdToScroll={id} />;

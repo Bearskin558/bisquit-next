@@ -28,3 +28,9 @@
 .navItem:focus-visible {
   border: 1px solid black;
 }
+
+@media (max-width: 1024px) {
+  .navItem {
+    letter-spacing: 0.2em;
+  }
+}

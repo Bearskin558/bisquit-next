@@ -7,12 +7,11 @@ body {
   overflow-x: hidden;
   --price-fz: 24px;
   --price-fw: 500;
-  --descr-fz: 24px;
+  --descr-fz: 22px;
   letter-spacing: 0.2em;
   line-height: 200%;
-  scrollbar-width: 10px;
+  scrollbar-width: thin;
 }
-
 h1,
 h2 {
   font-size: 46px;
@@ -47,6 +46,7 @@ section:last-child {
   body {
     --descr-fz: 20px;
   }
+  h1,
   h2 {
     font-size: 36px;
   }

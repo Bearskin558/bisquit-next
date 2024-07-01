@@ -8,7 +8,7 @@
   justify-content: flex-start;
   align-items: center;
   background-color: #eee7de;
-  padding: 0 40px;
+  padding: 0 34px;
   z-index: 100;
   gap: clamp(15px, 1.4vw, 25px);
 }
