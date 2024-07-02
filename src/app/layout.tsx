@@ -7,8 +7,8 @@ import Link from 'next/link';
 const jost = Jost({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bisquit-bakery-shop.ru'),
-  title: 'Bisquit | бенто, торты, макарон в Калуге на заказ',
+  metadataBase: new URL('https://bisсuit-bakery-shop.ru'),
+  title: 'Biscuit | бенто, торты, макарон в Калуге на заказ',
   description:
     'Домашняя кондитерская в Калуге. У меня Вы можете заказать торты, бенто-торты, макарон, трайфлы, капкейки, ириски, печенье.',
   keywords:
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'url',
     images: 'img/logo.png',
-    title: 'Bisquit | бенто, торты, макарон в Калуге на заказ',
+    title: 'Biscuit | бенто, торты, макарон в Калуге на заказ',
     description:
       'Домашняя кондитерская в Калуге. У меня Вы можете заказать торты, бенто-торты, макарон, трайфлы, капкейки, ириски, печенье.',
   },
