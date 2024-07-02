@@ -1,18 +1,28 @@
-import React from "react"
+import React from 'react';
 
-import styles from "./ImageBlock.module.css"
+import styles from './ImageBlock.module.css';
+import Image from 'next/image';
 
 type Props = {
-  src: string
-  alt: string
-}
+  src: string;
+  alt: string;
+};
 
-const ImageBlock: React.FC<Props> = ({ src, alt }) => {
+const ImageBlock = ({ src, alt }: Props) => {
   return (
     <div className={styles.wrapper}>
-      <img src={src} alt={alt} className={styles.img} loading="lazy" />
+      <Image
+        src={`/${src}`}
+        width={0}
+        height={0}
+        alt={alt}
+        className={styles.img}
+        loading="lazy"
+        sizes="100vw"
+        style={{ width: 'auto', height: '100%' }}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default ImageBlock
+export default ImageBlock;

@@ -4,6 +4,7 @@ import styles from './TopContent.module.scss';
 import listTopImg from './images';
 import ImageBlock from '../ImageBlock';
 import Slider from '../Slider';
+import Image from 'next/image';
 
 const TopContent = () => {
   return (
@@ -16,20 +17,22 @@ const TopContent = () => {
 
       <Slider images={listTopImg} />
       <blockquote className={styles.blockquote}>
-        <img
+        <Image
           loading="lazy"
           src="img/top-content/quote-left.svg"
           alt="quote-left"
           width={30}
+          height={30}
         />
         <p>
           счастье нельзя купить, но можно купить пирожное, а это почти то же
           самое
         </p>
-        <img
+        <Image
           src="img/top-content/quote-right.svg"
           alt="quote-right"
           width={30}
+          height={30}
         />
       </blockquote>
     </div>

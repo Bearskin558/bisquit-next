@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './ImageContent.module.scss';
 import { TypeImg } from '../TopContent/images';
 import Slider from '../Slider';
+import Image from 'next/image';
 
 type Props = {
   images: TypeImg[];
@@ -14,12 +15,16 @@ const ImageContent = ({ images }: Props) => {
       <div className={styles.imgBlock}>
         {images.map((img) => {
           return (
-            <img
+            <Image
               loading="lazy"
-              src={img.src}
+              src={`/${img.src}`}
               alt={img.alt}
               className={styles.img}
               key={img.alt}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: 'auto', height: '100%' }}
             />
           );
         })}
