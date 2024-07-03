@@ -3,6 +3,7 @@ import React from 'react';
 import NavMenu from '../NavMenu';
 
 import styles from './Header.module.css';
+import Image from 'next/image';
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = React.useState(false);
@@ -15,7 +16,14 @@ const Header = () => {
       >
         <img src="img/toggle-menu.svg" alt="toggle-menu" width="100%" />
       </button>
-      <img src="img/logo.png" alt="logo" className={styles.logo}></img>
+      <Image
+        src="/img/logo.png"
+        alt="logo"
+        width={0}
+        height={0}
+        sizes="100vh"
+        className={styles.logo}
+      />
       <NavMenu isOpen={isOpenMenu} setIsOpen={setIsOpenMenu} />
       <div className={styles.locationBlock}>
         <img

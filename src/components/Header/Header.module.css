@@ -8,12 +8,13 @@
   justify-content: flex-start;
   align-items: center;
   background-color: #eee7de;
-  padding: 0 34px;
+  padding: 0 30px;
   z-index: 100;
   gap: clamp(15px, 1.4vw, 25px);
 }
 .logo {
-  height: 80%;
+  width: clamp(100px, 10vw, 120px);
+  height: auto;
   /* margin-right: 30px; */
 }
 .toggleMenuButton {
