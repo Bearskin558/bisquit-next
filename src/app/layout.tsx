@@ -35,6 +35,7 @@ export default function RootLayout({
         <meta property="og:image:width" content="<120>" />
         <meta property="og:image:height" content="<68>" />
 <meta name="yandex-verification" content="e8e54da190d1e770" />
+<meta name="google-site-verification" content="nuU03J33jljzauUHL3LliZn9O7Kxjc4EzuH9d0K4jeM" />
       </head>
       <body className={jost.className}>{children}</body>
     </html>
