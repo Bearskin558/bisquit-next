@@ -34,6 +34,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="img/favicon.ico" />
         <meta property="og:image:width" content="<120>" />
         <meta property="og:image:height" content="<68>" />
+<meta name="yandex-verification" content="e8e54da190d1e770" />
       </head>
       <body className={jost.className}>{children}</body>
     </html>
