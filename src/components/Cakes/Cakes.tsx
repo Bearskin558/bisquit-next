@@ -7,7 +7,7 @@ const Cakes = () => {
   return (
     <section className={styles.cakes} id="cakes">
       <h2>торты</h2>
-      <PriceBlock text="1500 ₽/кг" />
+      <PriceBlock text="1700 ₽/кг" />
       <div className={styles.filling}>
         <div className={styles.fillingItem}>
           <img

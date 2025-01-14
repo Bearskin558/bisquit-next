@@ -15,7 +15,7 @@ const Toffee = () => {
   return (
     <section id="toffee">
       <h2>Ириски</h2>
-      <PriceBlock text="60 ₽/шт" />
+      <PriceBlock text="80 ₽/шт" />
       <p className={styles.description}>
         сливочные конфеты: классические или с морской солью
       </p>

@@ -31,7 +31,7 @@ const Macarons = () => {
   return (
     <section id="macarons">
       <h2>макарон</h2>
-      <PriceBlock text="100 ₽/шт" />
+      <PriceBlock text="120 ₽/шт" />
       <div className={styles.fillings}>
         <h3>Вкусы:</h3>
         <div className={styles.fillingsList}>
@@ -46,7 +46,7 @@ const Macarons = () => {
       </div>
       <ImageContent images={macaronsImages} />
       <p className={styles.orderInfo}>заказ от 20 шт одного вкуса</p>
-      <PriceBlock text="3000 ₽" />
+      <PriceBlock text="3600 ₽" />
       <p className={styles.description}>
         27 макарон в форме торта-куба с одним из представленных вкусов
       </p>
