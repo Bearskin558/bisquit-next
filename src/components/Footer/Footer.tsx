@@ -34,10 +34,6 @@ const Footer = () => {
                 <img src="/img/footer/vk.svg" alt="vk" />
                 <span>ВКонтакте</span>
               </a>
-              <a className={styles.contactsItem} href="tel:+79029344383">
-                <img src="/img/footer/phone.svg" alt="phone" />
-                <span>+79029344383</span>
-              </a>
             </div>
           </div>
           <div className={styles.location}>
