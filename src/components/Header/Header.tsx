@@ -34,17 +34,6 @@ const Header = () => {
     if(!isOpenMenu) document.body.style.overflowY = 'auto'
   }, [isOpenMenu])
 
-  const observer = new IntersectionObserver(
-  ([entry]) => {
-    if (entry.isIntersecting && headerRef.current) {
-      headerRef.current.classList.remove('hide')
-    } else if(headerRef.current){
-       headerRef.current.classList.add('hide')
-    }
-  },
-  { threshold: 0.1 }
-)
-
   return (
     <header className={styles.header} ref={headerRef}>
       <button
