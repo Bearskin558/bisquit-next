@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
-        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link rel="shortcut icon" href="favicon.ico" />
         <meta
           property="og:image"
           content="https://biscuit-bakery-shop.ru/img/logo.png"
