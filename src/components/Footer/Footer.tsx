@@ -28,7 +28,7 @@ const Footer = () => {
               </a>
               <a
                 className={styles.contactsItem}
-                href="https://vk.com/biscuit_bakeryshop"
+                href="https://vk.com/biscuit_kaluga"
                 target="_blank"
               >
                 <img src="/img/footer/vk.svg" alt="vk" />
